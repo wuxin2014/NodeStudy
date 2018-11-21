@@ -1,0 +1,25 @@
+{
+  "name": "Koa2Study",
+  "version": "1.0.0",
+  "description": "Koa2的学习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuxin2014/KoaStudy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuxin2014/KoaStudy/issues"
+  },
+  "homepage": "https://github.com/wuxin2014/KoaStudy#readme",
+  "dependencies": {
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^3.2.0",
+    "koa-router": "^7.3.0"
+  }
+}

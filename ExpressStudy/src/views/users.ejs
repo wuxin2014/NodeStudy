@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+<body>
+    <div>
+        <h1>用户列表查询</h1>
+        <form action="/users/search" method="post">
+            姓名：<input type="text" name="userName" /><br/>
+            年龄：<input type="text" name="age" /><br/>
+            <button type="submit">查询</button>
+        </form>
+        <table>
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>操作</th>
+            </tr>
+            <% for(var i = 0; i < datas.length; i++) { %>
+            <tr>
+                <td><%= datas[i].id %></td>
+                <td><%= datas[i].userName %></td>
+                <td><%= datas[i].age %></td>
+                <td><a href="/users/add">添加用户</a></td>
+                <td><a href="/users/del/<%= datas[i].id %>">删除</a></td>
+                <td><a href="/users/update/<%= datas[i].id %>">修改</a></td>
+            </tr>
+            <% } %>
+        </table>
+    </div>
+</body>
+</html>

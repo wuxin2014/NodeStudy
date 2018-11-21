@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+<body>
+    <div>
+        <h1><%= title %></h1>
+        <form action="/users/update" method="POST">
+            <input type="hidden" name="id" value="<%= data.id %>"/>
+            <label>用户名：<input type="text" name="userName" value="<%= data.id %>" /></label><br/>
+            <label>密码：<input type="text" name="password" value="<%= data.password %>" /></label><br/>
+            <label>性别：<input type="text" name="sex" value="<%= data.sex %>" /></label><br/>
+            <label>年龄：<input type="text" name="age" value="<%= data.age %>" /></label><br/>
+            <label>地址：<input type="text" name="address" value="<%= data.address %>" /></label><br/>
+            <button type="submit">修改用户</button>
+        </form>
+    </div>
+</body>
+</html>

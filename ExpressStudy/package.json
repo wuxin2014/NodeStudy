@@ -1,0 +1,33 @@
+{
+  "name": "ExpressStudy",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node ./src/bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuxin2014/ExpressStudy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuxin2014/ExpressStudy/issues"
+  },
+  "homepage": "https://github.com/wuxin2014/ExpressStudy#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "moment": "^2.20.1",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.2",
+    "request": "^2.83.0",
+    "sequelize": "^4.33.0",
+    "serve-favicon": "^2.4.5"
+  }
+}

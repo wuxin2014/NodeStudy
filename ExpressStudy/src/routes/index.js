@@ -2,13 +2,13 @@
 // 匹配路径和路由
 module.exports = function (app) {
   app.get('/', function (req, res) {
-    res.redirect('/zmyUsers');
+    res.redirect('/main');
   });
   app.use('/main', require('./main'));
   app.use('/login', require('./login'));
-  app.use('/register', require('./register'));
-  app.use('/users', require('./users'));
-  app.use('/zmyUsers', require('./zmyUsers'));
+  // app.use('/register', require('./register'));
+  // app.use('/users', require('./users'));
+  // app.use('/zmyUsers', require('./zmyUsers'));
 
   // 404错误处理
   app.use(function(req, res, next) {
